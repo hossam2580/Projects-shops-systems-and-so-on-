@@ -1,63 +1,300 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="NEXORA حلول تقنية ذكية لتطوير أعمالك">
-<title>NEXORA | نبتكر اليوم لنصنع غداً أفضل</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d19">
+  <title>NEXORA | حلول رقمية مبتكرة</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080d19;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #202b40;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 25px;
+      font-weight: bold;
+      color: #58a6ff;
+      letter-spacing: 2px;
+    }
+
+    .brand img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+
+    nav a {
+      color: #c5cede;
+      text-decoration: none;
+      margin-right: 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 80% 30%, #123c7555, transparent 35%),
+        #080d19;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #58a6ff;
+      background: #14243c;
+      border: 1px solid #254b7c;
+      padding: 5px 17px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 65px);
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #58a6ff;
+    }
+
+    .hero p {
+      color: #aab6c8;
+      max-width: 570px;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #287de0;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #155eb5;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #9aa9bd;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #101a2b;
+      border: 1px solid #23334d;
+      padding: 28px;
+      border-radius: 15px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #3989ed;
+    }
+
+    .card .icon {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #aab6c8;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #0d1524;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      color: #b5c0d0;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #050912;
+      border-top: 1px solid #202b40;
+      color: #8290a5;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 5%;
+      }
+
+      nav a {
+        margin-right: 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 75px 6%;
+        min-height: 470px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header><nav class="wrap nav">
-<a class="brand" href="#home"><span class="mark">N✦</span><span>NEXORA<small>INNOVATING TOMORROW</small></span></a>
-<button id="menu" aria-label="فتح القائمة">☰</button>
-<div class="links" id="links"><a href="#home">الرئيسية</a><a href="#services">خدماتنا</a><a href="#about">من نحن</a><a href="#work">طريقة عملنا</a><a href="#projects">مشاريعنا</a><a class="navbtn" href="#contact">ابدأ مشروعك ↗</a></div>
-</nav></header>
-<main>
-<section class="hero wrap" id="home">
-<div><label>● حلول رقمية تصنع الفرق</label><h1>نبتكر اليوم<br><em>لنصنع غداً أفضل</em></h1>
-<p>نحوّل أفكارك إلى تجارب رقمية ذكية، من تصميم المواقع إلى الحلول التقنية التي تطوّر أعمالك.</p>
-<div class="actions"><a class="btn" href="#contact">ابدأ مشروعك ←</a><a class="btn ghost" href="#services">اكتشف خدماتنا</a></div>
-<div class="stats"><div><b>+50</b><small>فكرة قابلة للتطوير</small></div><div><b>24/7</b><small>دعم ومتابعة</small></div><div><b>100%</b><small>اهتمام بالتفاصيل</small></div></div></div>
-<div class="visual"><div class="glow"></div><div class="orbit"></div><div class="screen"><div class="dots">● ● ● <span>NEXORA / DIGITAL</span></div><div class="bigN">N✦</div><div class="tagline">BUILD · CREATE · INNOVATE</div><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="float one">⌘ <span><b>تطوير ذكي</b><small>Clean & modern code</small></span></div><div class="float two">☁ <span><b>حلول سحابية</b><small>Connected future</small></span></div></div>
-</section>
-<section class="section alt" id="services"><div class="wrap"><div class="heading"><label>ماذا نقدم؟</label><h2>تقنية تخدم <em>طموحك</em></h2><p>خدمات رقمية مرنة تساعد مشروعك على الظهور والنمو.</p></div>
-<div class="cards"><article><i>⌘</i><h3>تصميم وتطوير المواقع</h3><p>مواقع عصرية وسريعة ومتوافقة مع الجوال والكمبيوتر.</p><a href="#contact">اعرف المزيد ←</a></article><article><i>✧</i><h3>الهوية والتصميم</h3><p>هويات بصرية وواجهات جذابة تعكس شخصية علامتك التجارية.</p><a href="#contact">اعرف المزيد ←</a></article><article><i>⌁</i><h3>حلول تقنية</h3><p>أفكار وأدوات رقمية تساعدك على تنظيم العمل وتطويره.</p><a href="#contact">اعرف المزيد ←</a></article></div></div></section>
 
-<section class="section portfolio" id="projects">
-  <div class="wrap">
-    <div class="heading">
-      <label>نماذج من أعمالنا</label>
-      <h2>مشاريعنا <em>التجريبية</em></h2>
-      <p>مجموعة نماذج تصميمية أعددناها لعرض أسلوبنا وإمكاناتنا.</p>
+  <header>
+    <div class="brand">
+      <img src="logo.svg" alt="NEXORA Logo">
+      NEXORA
     </div>
-    <div class="project-grid">
-      <article class="project-card">
-        <img src="images/techstore.png" alt="نموذج متجر TechStore الإلكتروني">
-        <div class="project-info"><span>تجارة إلكترونية</span><h3>TechStore</h3><p>واجهة متجر إلكتروني متجاوبة لعرض المنتجات والتسوق.</p><small>تصميم واجهات · تجربة مستخدم · Responsive</small></div>
-      </article>
-      <article class="project-card">
-        <img src="images/restaurant.png" alt="نموذج هوية وإعلان مطعم">
-        <div class="project-info"><span>مطاعم وضيافة</span><h3>مطعم لؤلؤة اليمن</h3><p>نموذج هوية بصرية وإعلان ترويجي لمطعم.</p><small>هوية بصرية · تصميم إعلاني</small></div>
-      </article>
-      <article class="project-card">
-        <img src="images/dashboard.png" alt="نموذج لوحة تحكم وإحصائيات">
-        <div class="project-info"><span>إدارة الأعمال</span><h3>لوحة إدارة المشاريع</h3><p>تصور مرئي للوحة متابعة مؤشرات الأداء والمهام.</p><small>Dashboard UI · Data Visualization</small></div>
-      </article>
-    </div>
-    <p class="portfolio-note">ملاحظة: هذه نماذج تجريبية لأغراض العرض في معرض الأعمال، وليست مشاريع منفذة لعملاء حقيقيين.</p>
-  </div>
-</section>
 
-<section class="section wrap about" id="about"><div class="emblem"><div>N✦</div><small>THINK BEYOND</small></div><div><label>من نحن</label><h2>نحو مستقبل رقمي<br><em>بلا حدود</em></h2><p>NEXORA علامة تقنية تجريبية تؤمن أن كل فكرة رائعة تستحق أن تتحول إلى تجربة رقمية مميزة. نجمع بين الإبداع والبساطة والتقنية لصناعة حلول واضحة وفعّالة.</p><ul><li>✓ تصميم يركز على تجربة المستخدم</li><li>✓ اهتمام بالأداء والتوافق</li><li>✓ تطوير مستمر وقابل للتوسع</li></ul></div></section>
-<section class="section alt" id="work"><div class="wrap"><div class="heading"><label>طريقة عملنا</label><h2>من الفكرة إلى <em>الإنجاز</em></h2><p>خطوات واضحة تجعل رحلتك الرقمية أسهل.</p></div><div class="steps"><div><b>01</b><h3>نفهم فكرتك</h3><p>نستمع لاحتياجك ونحدد الهدف.</p></div><div><b>02</b><h3>نخطط ونصمم</h3><p>نرسم تجربة مناسبة لهوية مشروعك.</p></div><div><b>03</b><h3>نطوّر ونختبر</h3><p>نبني الحل ونتأكد من عمله جيداً.</p></div><div><b>04</b><h3>نطلق ونحسّن</h3><p>نجهز مشروعك للانطلاق والتطوير.</p></div></div></div></section>
-<section class="wrap contact section" id="contact"><div><label>هل لديك فكرة؟</label><h2>دعنا نصنع شيئاً<br><em>استثنائياً معاً.</em></h2><p>هذا نموذج تجريبي للهوية والموقع، ويمكن تخصيص بيانات التواصل والخدمات حسب العميل الحقيقي.</p></div><a class="btn" href="mailto:hello@nexora.example">راسلنا الآن ↗</a></section>
-</main>
-<footer><div class="wrap foot"><a class="brand" href="#home"><span class="mark">N✦</span><span>NEXORA<small>INNOVATING TOMORROW</small></span></a><p>© 2026 NEXORA — نموذج تجريبي لمعرض الأعمال.</p><a href="#home">للأعلى ↑</a></div></footer>
-<script>
-const menu=document.getElementById('menu'), links=document.getElementById('links');
-menu.addEventListener('click',()=>{links.classList.toggle('open');menu.setAttribute('aria-expanded',links.classList.contains('open'));});
-links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-</script>
-</body></html>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#about">من نحن</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="tag">NEXT GENERATION DIGITAL SOLUTIONS</span>
+
+        <h1>
+          نصنع المستقبل<br>
+          <span>بأفكار رقمية</span>
+        </h1>
+
+        <p>
+          في NEXORA نحول الأفكار إلى تجارب رقمية مميزة،
+          ونقدم حلولاً إبداعية تجمع بين التقنية والتصميم والابتكار.
+        </p>
+
+        <a href="#services" class="btn">اكتشف خدماتنا</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-title">
+        <h2>ماذا نقدم؟</h2>
+        <p>حلول رقمية تساعدك على تطوير أعمالك</p>
+      </div>
+
+      <div class="services">
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>تصميم المواقع</h3>
+          <p>مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>الهوية البصرية</h3>
+          <p>تصميم هويات تجارية تعكس شخصية علامتك التجارية.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>الحلول التقنية</h3>
+          <p>أفكار وحلول تقنية تساعد على تحسين تجربة المستخدم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title">
+        <h2>من نحن؟</h2>
+      </div>
+
+      <p>
+        NEXORA علامة رقمية تجريبية تهدف إلى تقديم
+        تصاميم وحلول تقنية مبتكرة، برؤية تجمع بين
+        الإبداع والبساطة والتكنولوجيا الحديثة.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <h2>لنبدأ مشروعك القادم</h2>
+        <p>كل فكرة عظيمة تبدأ بخطوة.</p>
+      </div>
+
+      <a href="mailto:info@nexora.example" class="btn">
+        تواصل معنا
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 NEXORA - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
