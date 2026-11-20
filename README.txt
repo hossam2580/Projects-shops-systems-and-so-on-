@@ -1,12 +1,15 @@
-مشروع NEXORA التجريبي - نسخة معرض الأعمال
+# لؤلؤة اليمن — Brand Identity Project
 
-طريقة التشغيل:
-1- فك ضغط الملف.
-2- افتح مجلد NEXORA_website.
-3- افتح index.html باستخدام Chrome أو Edge.
-4- اترك مجلد images بجانب index.html حتى تظهر صور المشاريع.
-5- لتعديل النصوص افتح index.html، ولتعديل التصميم افتح style.css.
+A standalone responsive HTML/CSS brand identity showcase.
 
-يتضمن الموقع معرض مشاريع تجريبية: متجر إلكتروني، هوية مطعم، ولوحة تحكم.
-ملاحظة: الصور والمشاريع نماذج تجريبية للعرض وليست أعمالاً منفذة لعملاء حقيقيين.
-لا توجد قاعدة بيانات أو نظام طلبات فعلي في هذه النسخة.
+## Files
+- `index.html` — the project page
+- `style.css` — layout and responsive styles
+- `assets/logo.svg` — editable vector logo
+
+## Run
+Open `index.html` in a browser. No build tools are required.
+
+## Customize
+Edit the brand copy in `index.html`, colors in `style.css`, and the SVG logo in `assets/logo.svg`.
+The Google Fonts import needs an internet connection; the page falls back to Arial.
