@@ -1,4 +1,4 @@
-# لؤلؤة اليمن — Brand Identity Project
+# TechStore — Brand Identity Project
 
 A standalone responsive HTML/CSS brand identity showcase.
 
