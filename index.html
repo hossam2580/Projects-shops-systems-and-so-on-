@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hossam | Creative Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+ font-family:Arial,sans-serif;
+ background:#0b1020;color:#fff;line-height:1.8
+}
+header{
+ padding:22px 8%;display:flex;
+ justify-content:space-between;align-items:center;
+ border-bottom:1px solid #252d40
+}
+.logo{font-size:25px;font-weight:bold;color:#d6b46a}
+nav a{color:#ddd;text-decoration:none;margin:0 10px}
+.hero{
+ padding:90px 8%;text-align:center;
+ background:radial-gradient(ellipse at top,#26334c,#0b1020 70%)
+}
+.hero small{color:#d6b46a;letter-spacing:3px}
+.hero h1{font-size:clamp(32px,6vw,58px);margin:18px 0}
+.hero h1 span{color:#d6b46a}
+.hero p{color:#b8c1d1;max-width:650px;margin:auto}
+.btn{
+ display:inline-block;margin-top:28px;padding:12px 28px;
+ background:#d6b46a;color:#111;border-radius:8px;
+ text-decoration:none;font-weight:bold
+}
+section{padding:65px 8%}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:32px}
+.section-title p{color:#9ca8bb}
+.projects{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+ gap:22px
+}
+.card{
+ background:#151d30;border:1px solid #29344a;
+ border-radius:15px;overflow:hidden;transition:.3s
+}
+.card:hover{transform:translateY(-7px);border-color:#d6b46a}
+.cover{
+ height:165px;display:flex;align-items:center;
+ justify-content:center;font-size:55px
+}
+.one{background:linear-gradient(135deg,#102b55,#087eaa)}
+.two{background:linear-gradient(135deg,#171717,#92702e)}
+.three{background:linear-gradient(135deg,#102d59,#1979c9)}
+.four{background:linear-gradient(135deg,#38251c,#a77a43)}
+.info{padding:20px}
+.info h3{color:#e4c47c;font-size:22px}
+.info p{color:#b4bdcc;font-size:14px;margin:8px 0 18px}
+.info a{color:#e4c47c;text-decoration:none}
+.about{text-align:center;background:#11192a}
+.about p{color:#b4bdcc;max-width:650px;margin:12px auto}
+footer{text-align:center;padding:25px;color:#8894a8;border-top:1px solid #29344a}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">HOSSAM.</div>
+ <nav><a href="#home">الرئيسية</a><a href="#projects">المشاريع</a><a href="#about">من أنا</a></nav>
+</header>
+
+<div class="hero" id="home">
+ <small>CREATIVE DESIGN & DEVELOPMENT</small>
+ <h1>نحوّل أفكارك إلى <span>واقع رقمي</span></h1>
+ <p>مرحباً بك في معرض أعمال حسام، هنا تجد مجموعة من مشاريع التصميم والهويات البصرية وتطوير المواقع.</p>
+ <a class="btn" href="#projects">اكتشف أعمالي</a>
+</div>
+
+<section id="projects">
+ <div class="section-title">
+  <h2>مشاريعي المختارة</h2>
+  <p>مجموعة من الهويات والمشاريع الإبداعية</p>
+ </div>
+
+ <div class="projects">
+
+  <div class="card">
+   <div class="cover one">✦</div>
+   <div class="info">
+    <h3>NEXORA</h3>
+    <p>هوية بصرية لشركة تقنية وحلول رقمية.</p>
+    <a href="./نكسورا/">استكشف المشروع ←</a>
+   </div>
+  </div>
+
+  <div class="card">
+   <div class="cover two">♛</div>
+   <div class="info">
+    <h3>لؤلؤة اليمن</h3>
+    <p>هوية بصرية لمطعم بطابع فاخر.</p>
+    <a href="./لؤلؤة%20اليمن%201%20لؤلؤة%20اليمن/">استكشف المشروع ←</a>
+   </div>
+  </div>
+
+  <div class="card">
+   <div class="cover three">▣</div>
+   <div class="info">
+    <h3>TechStore</h3>
+    <p>هوية متجر إلكتروني متخصص بالتقنية.</p>
+    <a href="./متجر%20التقنية/">استكشف المشروع ←</a>
+   </div>
+  </div>
+
+  <div class="card">
+   <div class="cover four">☕</div>
+   <div class="info">
+    <h3>Aroma Cafe</h3>
+    <p>هوية بصرية لمقهى بطابع دافئ وأنيق.</p>
+    <a href="./أروما%20كافيه/">استكشف المشروع ←</a>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<section class="about" id="about">
+ <h2>من أنا؟</h2>
+ <p>حسام | مهتم بالتصميم وتطوير المواقع وصناعة التجارب الرقمية. أعمل على تحويل الأفكار إلى مشاريع إبداعية.</p>
+</section>
+
+<footer>
+ HOSSAM PORTFOLIO © 2026
+</footer>
+
+</body>
+</html>
